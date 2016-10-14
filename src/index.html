@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= htmlWebpackPlugin.title %></title>
+    <link rel="shortcut icon" href="./assets/images/favicon.ico"/>
+    <link rel="bookmark" href="./assets/images/favicon.ico"/>
+    <% var i = 0;
+    for (var chunk in htmlWebpackPlugin.files.css) { %>
+    <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.css[chunk] %>"/>
+    <% } %>
+
+</head>
+<body>
+
+<div id="test"></div>
+<div class="eason">
+    这里是Easona
+</div>
+<div id="img"></div>
+
+<img src="/assets/images/123.png" alt="">
+
+</body>
+</html>
